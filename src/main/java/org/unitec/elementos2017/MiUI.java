@@ -20,7 +20,7 @@ import com.vaadin.ui.themes.ValoTheme;
  * @author campitos
  */
 @SpringUI
-@Theme("valo")
+@Theme("valo")// tema por defecto 
 public class MiUI extends UI{
 
     @Override
@@ -37,8 +37,9 @@ public class MiUI extends UI{
         boton1.setStyleName(ValoTheme.BUTTON_DANGER);
         
         //Agregamos un evento de botón
+        // evento                 nombre->{intrucciones}
         boton1.addClickListener(hola->{
-            Notification.show("Hola mundo soy Juan Carlos campos!!", Notification.Type.ERROR_MESSAGE);
+            Notification.show("Hola mundo soy Eduardo Valle!!", Notification.Type.ERROR_MESSAGE);
         });
         
         //Agregamos componentes al layout principal
